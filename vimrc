@@ -36,7 +36,21 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 set t_Co=256
 syntax enable
-set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+set background=dark
 highlight clear SignColumn
+call gitgutter#highlight#define_highlights()
+set number
+set guioptions -=m
+
+set guioptions -=T
+set guioptions -=r
+
+set guifont=Anonymous\ Pro\ for\ Powerline\ 14
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
