@@ -15,6 +15,8 @@ Plugin 'joonty/vim-sauce'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'rking/ag.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,10 +44,10 @@ set background=dark
 highlight clear SignColumn
 call gitgutter#highlight#define_highlights()
 set number
-set guioptions -=m
+set guioptions-=m
 
-set guioptions -=T
-set guioptions -=r
+set guioptions-=T
+set guioptions-=r
 
 set guifont=Anonymous\ Pro\ for\ Powerline\ 14
 let g:Powerline_symbols = 'fancy'
